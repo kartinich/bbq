@@ -5,19 +5,11 @@ ruby '2.7.1'
 
 gem 'rails', '~> 5.2.4', '>= 5.2.4.3'
 
-gem 'jquery-rails'
-
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
 
-gem 'libv8'
-
 gem 'devise'
-
-gem 'devise-i18n'
-
-gem 'russian'
 
 gem 'puma', '~> 3.11'
 
@@ -32,6 +24,7 @@ group :production do
 end
 
 group :development, :test do
+  gem 'listen'
   gem 'sqlite3'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
