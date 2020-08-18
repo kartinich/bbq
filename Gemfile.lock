@@ -167,6 +167,7 @@ DEPENDENCIES
   devise
   jquery-rails
   less-rails
+  libv8
   listen
   pg
   puma (~> 3.11)
