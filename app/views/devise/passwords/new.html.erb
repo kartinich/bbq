@@ -1,0 +1,18 @@
+<h1>Забыли пароль?</h1>
+
+<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="form-group">
+    <i class="fa fa-envelope"></i>
+    <%= f.label 'E-mail:' %> <br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Отправиль пароль на E-mail", class: 'btn btn-secondary' %>
+    <div>&nbsp;</div>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
