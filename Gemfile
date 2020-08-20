@@ -10,6 +10,8 @@ gem 'twitter-bootstrap-rails'
 gem 'jquery-rails'
 
 gem 'devise'
+gem 'devise-i18n'
+gem 'russian'
 
 gem 'puma', '~> 3.11'
 
