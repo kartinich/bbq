@@ -26,9 +26,26 @@ ru:
       destroyed: 'Вы удалили мероприятие :('
     users:
       updated: 'Вы обновили свой профиль'
+    comments:
+      created: 'Комментарий добавлен'
+      destroyed: 'Комментарий удален :('
+      error: 'Ошибка с комментарием'
+    subscriptions:
+      created: 'Вы подписаны на это событие'
+      destroyed: 'Вы отписались от этого события'
+      error: 'Подписка/отписка не сработала'
+
   app:
     name: 'Шашлындос!'
     company: 'Хороший программист'
+
+  comments:
+    comment:
+      destroy_confirm: 'Вы уверены, что хотите удалить этот комменатрий?'
+
+  subscriptions:
+    subscription:
+      destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
 
   error:
     one: '%{count} ошибка'
