@@ -18,6 +18,7 @@ ru:
         address: 'Место проведения'
         datetime: 'Дата и время'
         description: 'Описание'
+
   controllers:
     events:
       created: 'Вы создали новое мероприятие'
@@ -28,3 +29,8 @@ ru:
   app:
     name: 'Шашлындос!'
     company: 'Хороший программист'
+
+  error:
+    one: '%{count} ошибка'
+    few: '%{count} ошибки'
+    many: '%{count} ошибок'
