@@ -52,4 +52,8 @@ ru:
     few: '%{count} ошибки'
     many: '%{count} ошибок'
 
+  form:
+    errors:
+      user_owner: ' не может подписаться на свое событие!'
+
   are_you_sure: 'Вы уверенны?'
