@@ -22,6 +22,9 @@ gem 'bootsnap'
 
 gem 'font-awesome-rails'
 
+gem 'carrierwave'
+gem 'rmagick'
+
 
 group :production do
   gem 'pg'
