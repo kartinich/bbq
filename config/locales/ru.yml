@@ -66,5 +66,6 @@ ru:
   form:
     errors:
       user_owner: ' не может подписаться на свое событие!'
+      email_already_registered: ' - уже зарегистрирован!'
 
   are_you_sure: 'Вы уверенны?'
