@@ -29,15 +29,17 @@ class Subscription < ApplicationRecord
     end
   end
 
+  private
+
   def user_owner
     if user_id == event.user_id
-      errors.add(user_name, I18n.t('form.errors.user_owner'))
+      errors.add(:user_name, :user_owner)
     end
   end
 
   def email_already_registered
     if User.find_by(email: user_email)
-      errors.add(user_email, I18n.t('form.errors.email_already_registered'))
+      errors.add(:user_email, :email_already_registered)
     end
   end
 end

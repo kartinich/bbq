@@ -7,6 +7,15 @@ ru:
       event: 'Событие'
       photo: 'Фотография'
 
+    errors:
+      models:
+        subscription:
+          attributes:
+            user_name:
+              user_owner: ' не может подписаться на свое событие!'
+            user_email:
+              email_already_registered: ' - уже зарегистрирован!'
+
     # Перевод атрибутов моделей
     attributes:
       user:
@@ -62,10 +71,5 @@ ru:
     one: '%{count} ошибка'
     few: '%{count} ошибки'
     many: '%{count} ошибок'
-
-  form:
-    errors:
-      user_owner: ' не может подписаться на свое событие!'
-      email_already_registered: ' - уже зарегистрирован!'
 
   are_you_sure: 'Вы уверенны?'
