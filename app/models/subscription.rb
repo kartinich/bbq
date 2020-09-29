@@ -33,13 +33,13 @@ class Subscription < ApplicationRecord
 
   def user_owner
     if user_id == event.user_id
-      errors.add(:user_name, :user_owner)
+      errors.add(:user_name, :user_registered)
     end
   end
 
   def email_already_registered
     if User.find_by(email: user_email)
-      errors.add(:user_email, :email_already_registered)
+      errors.add(:user_email, :email_registered)
     end
   end
 end

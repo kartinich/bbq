@@ -11,10 +11,10 @@ ru:
       models:
         subscription:
           attributes:
-            user_name:
-              user_owner: ' не может подписаться на свое событие!'
             user_email:
-              email_already_registered: ' - уже зарегистрирован!'
+              email_registered: ' - уже зарегистрирован!'
+            user_name:
+              user_registered: ' не может подписаться на свое событие!'
 
     # Перевод атрибутов моделей
     attributes:
