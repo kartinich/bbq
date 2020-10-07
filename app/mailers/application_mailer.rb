@@ -1,5 +1,5 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'kartinich@yandex.ru'
+  default from: 'support@bbqagain.herokuapp.com'
 
   layout 'mailer'
 end
