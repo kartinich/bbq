@@ -46,7 +46,7 @@ class CommentsController < ApplicationController
     all_emails = (event.subscriptions.map(&:user_email) + [event.user.email]).uniq
 
     if comment.user
-      all_emails.delete(comment.user.email)
+      all_emails.delete(comment.user&.email)
     end
 
     # По адресам из этого массива делаем рассылку
