@@ -1,4 +1,4 @@
-<div class="col-md-6">
+<div class="col-md-7">
   <h1>Сменить пароль</h1>
 
   <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
@@ -11,11 +11,13 @@
         <em>(не менее <%= @minimum_password_length %> символов)</em><br />
       <% end %><br/>
       <%= f.password_field :password, autofocus: true, autocomplete: "new-password", class: 'form-control' %>
+      <div>&nbsp;</div>
     </div>
 
     <div class="field">
       <%= f.label :password_confirmation, "Новый пароль:" %><br />
       <%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'form-control', placeholder: 'Повторите пароль' %>
+      <div>&nbsp;</div>
     </div>
 
     <div class="actions">
